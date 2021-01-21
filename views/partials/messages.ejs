@@ -1,0 +1,28 @@
+<% if(typeof errors!= 'undefined') { %>
+      <div class="alert alert-warning mt-0 " style="text-align: center;" role="alert">
+            
+            <%    errors.forEach(function(error){ %>
+                  <span style="text-align: center;"> <%= error.msg %></span>
+                  <%    })        %>
+            </div>
+<% } %>
+
+<% if(success_msg!= '') { %>
+      <div class="alert alert-warning mt-0 " role="alert">
+            <span style="text-align: center;"><%=success_msg %> </span>
+            
+      </div>
+      <% } %>
+
+<% if(error_msg != '') { %>
+      <div class="alert alert-warning mt-0 " role="alert">
+            
+            <span style="text-align: center;"><%= error_msg %></span> 
+      </div>
+      <% } %> 
+<% if(error != '') { %>
+      <div class="alert alert-warning mt-0 " role="alert">
+            
+            <span ><%= error %> </span>
+      </div>
+      <% } %> 

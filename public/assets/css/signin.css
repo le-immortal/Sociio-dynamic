@@ -1,0 +1,307 @@
+
+/* Navigation Bar */
+
+nav{
+    height: auto;
+  }
+  
+  .navbar-dark{
+    background-color: #343A40;
+  
+  }
+  .navbar-nav{
+    margin: 0px 100px;
+  }
+  .nav-link{
+  /* border-bottom: 1px solid #81c784;
+  border-right: 1px solid #81c784; */
+    background-color: #343A40;
+    font-size: medium;
+  
+    text-decoration: none;
+    /* transform: translateX(100rem); */
+    /* animation: slideIn 0.5s forwards; */
+    transition: background-color 0.5s;
+    margin: 0px 15px;
+    /* width: 120px; */
+    /* -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999; */
+        /* box-shadow: 1px 1px 5px #999; */
+        /* background: linear-gradient(to right, #81c784 50%, #04151f 50%);
+        background-size: 200% 100%;
+        background-position: right bottom; */
+        transition: all .5s ease-out;
+  
+  }
+  
+  .nav-link span{
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .navbar-brand{
+    color: #04151f;
+  
+    /* transform: translateX(-100rem); */
+    animation: slideIn 0.5s forwards;
+  }
+  
+  label{
+    text-align: right;
+  }
+
+  .nav-item:hover .nav-link{
+    /* background-color: #81c784; */
+    background-position: left bottom;
+  
+    /* background-color: #81c784; */
+    color: #81c784;
+  }
+  .nav-item:hover span{
+    color: #81c784;
+    
+  }
+  
+  .button{
+    padding: 10px 0px;
+    margin: 0px 10px;
+    text-decoration: none;
+  background-color: #81c784;
+  color: #04151f!important;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+  
+  }
+  .button:hover{
+    background-color: #04151f;
+    color: #81c784  ;
+  }
+  
+  @keyframes slideIn{
+    from{}
+    to{
+        transform: translateX(0);
+    }
+  }
+  
+  @media(max-width:992px){
+    .navbar-nav{
+        margin: 0px;
+    }
+    .nav-link{
+        margin: 0px;
+        width: 100%;
+        padding-left: 30px!important;
+  
+    }
+  }
+  
+  /* Modal */
+  
+  .modal-header {
+    background-color: #343A40;
+    color: antiquewhite;
+  }
+  
+  .modal-body{
+    background-color: #f5f5f5;
+  }
+
+
+  /* Section 1 */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+  h1{font-family: 'Overpass', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: right;
+  }
+  
+  h2{font-family: 'Overpass', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: xx-large;
+  }
+  
+  
+  .subheading{font-family: 'Overpass', sans-serif;
+    text-transform: uppercase;
+    font-size:40px;
+    margin-bottom: 0;
+  }
+  p{
+    opacity: 0.9;
+  }
+  
+  
+  .page-title:after {
+    margin-top: -2%;
+    content: "";
+    display: block; 
+    width: 5%; 
+    border-bottom: 5px solid #04151f; 
+    opacity: 0.9;
+    transition: .5s;
+  }
+  
+  .page-title:hover:after {
+    width: 50%; 
+  }
+  
+  p{
+  padding-top: 10px;
+  }
+  
+
+  @media (max-width:1200px){
+    .subheading{
+      font-size: 30px;
+    }
+  }
+  @media (max-width:574px){
+    h1, .subheading, p{
+  text-align: left!important;
+    }
+  
+  .page-title:after {
+    margin-top: -2%;
+    content: "";
+    display: block; 
+    width: 5%; 
+    border-bottom: 5px solid #04151f; 
+    opacity: 0.9;
+    transition: .5s;
+  }
+  
+  .page-title:hover:after {
+    width: 40%; 
+  }
+  }
+  @media (max-width:300px){
+    .subheading{
+      font-size: 25px;
+    }
+    p{
+      font-size: 15px;
+    }
+    .pl-5{
+      padding: auto!important;
+    }
+  }
+  
+  
+  /* Section 2 - NAVs */
+
+
+  .nav-pills, .tab-content{
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 0;
+  }
+  
+  .nav-tab{
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .nav-pills > li > a {
+    background-color: #81c784!important;
+    color: #04151f!important;
+  }
+  
+  .nav-pills > li > a.active {
+    color: #f5f5f5!important;
+    background-color: #04151f!important ;
+  }
+  
+
+  .card{
+    overflow-y: auto;
+    transition: all 0.5s ease;
+    width: 80%;
+    height: auto;
+    background-color: #f5f5f5;
+  }
+  /* .card:hover{
+    scale: 1.02;
+    box-shadow: 4px 4px 10px #04151f;
+    -moz-box-shadow: 4px 4px 10px #04151f;
+    -webkit-box-shadow: 4px 4px 10px #04151f;
+    z-index: 1;
+  
+  } */
+  /* 
+  .card-text{
+  display: none;}
+  
+  .card:hover .card-body .card-text{
+    display: block;
+  } */
+  
+  
+  
+  /* Footer */
+  
+  .foot{
+    overflow-y: auto;
+  }
+  
+  .jumbo{
+    padding: 40px ;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  
+  .links{
+    color: #f5f5f5;
+    margin: 4px 0;
+    text-align: center;
+  }
+  
+  .links:hover{
+    background-color: #81c784;
+    color: #04151f;
+    padding: 4px 4px;
+    text-decoration:none;
+    border-radius: 5px;
+  }
+  
+  
+  
+  .s-logo{
+    text-decoration: none;
+    scale: 1;
+    text-decoration: #04151f;
+    
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    -moz-border-radius: 30px; 
+    border-radius: 30px;
+    margin: 0px 5px;
+    background-color: #f5f5f5;
+    color: #04151f;
+    text-align: center;
+    font-size: 1em;
+  }
+  .s-logo:hover{
+    background-color: #81c784;
+    color: #04151f;
+  }
+  
+  address {
+  font-size: 80%;
+  margin: 0px;
+  color: #f5f5f5; }  
+  
+  .logo{
+    height: auto;
+    transition: transform 0.55s ease;
+  }
+  .logo:hover{
+    transform: scale(1.09);
+  }
+  
+.alert{
+    margin-top: 50px;
+}
